@@ -50,19 +50,19 @@
                             "core-js",
                             "raf",
                             "rgbcolor"
-                        ],
-                        "server": "server/main.server.ts",
-                        "prerender": {
-                            "discoverRoutes": false,
-                            "routesFile": "router/routes.txt"
-                        },
-                        "ssr": {
-                            "entry": "server/server.ts"
-                        }
+                        ]
                     },
                     "configurations": {
                         "production": {
-                            "outputHashing": "all"
+                            "outputHashing": "all",
+                            "server": "server/main.server.ts",
+                            "prerender": {
+                                "discoverRoutes": false,
+                                "routesFile": "router/routes.txt"
+                            },
+                            "ssr": {
+                                "entry": "server/server.ts"
+                            }
                         },
                         "development": {
                             "optimization": false,
